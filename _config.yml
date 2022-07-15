@@ -61,7 +61,7 @@ future: true #显示未来的文章
 highlight: #代码块的设置, 请参考 Highlight.js 进行设置
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -122,6 +122,13 @@ theme: butterfly #当前主题名称。值为false时禁用主题
 ## Docs: https://hexo.io/docs/one-command-deployment
 #部署部分的设置
 deploy:
-  type: git
-  repo: https://github.com/chenyaoBOY/chenyaoBOY.GitHub.io.git
-  branch: master
+  - type: git
+    repo: https://github.com/chenyaoBOY/chenyaoBOY.GitHub.io.git
+    branch: master
+  - type: baidu_url_submitter
+
+baidu_url_submit:
+  count: 100 # 提交最新的一个链接
+  host: chenyaoboy.github.io # 站点管理中添加的网站域名
+  token: rhQ42iRlaVhXIA85 # token可以在API提交页面找到
+  path: baidu_urls.txt # 文本文档的地址，新链接会保存在此文本文档里
