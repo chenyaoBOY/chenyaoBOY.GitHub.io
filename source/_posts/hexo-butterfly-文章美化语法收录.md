@@ -1,6 +1,6 @@
 ---
 title: hexo-butterfly-文章美化语法收录
-keywords: 教程
+keywords: 教程 butterfly hexo
 date:
 
 categories: 
